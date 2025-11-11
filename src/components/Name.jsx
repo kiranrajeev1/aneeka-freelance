@@ -40,7 +40,7 @@ const Name = ({ name = 'Aneeka' }) => {
         initial="hidden"
         animate="visible"
       >
-        DevOps | AWS | Linux
+        AWS Cloud and Devops Engineer
       </motion.p>
 
       {/* Tagline - Mobile: text-2xl, Desktop: md:text-5xl lg:text-6xl (Original) */}
