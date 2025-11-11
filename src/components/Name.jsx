@@ -23,7 +23,7 @@ const Name = ({ name = 'Aneeka' }) => {
   };
 
   return (
-    <div className="text-center md:text-left space-y-4 h-full flex flex-col justify-center pt-16 md:pt-25">
+    <div className="text-center md:text-left space-y-4 h-full flex flex-col justify-center pt-16 md:pt-16">
       <motion.p
         className="text-lg md:text-3xl text-white font-['PT_Serif']"
         variants={introVariants}

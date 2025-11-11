@@ -50,7 +50,7 @@ return (
   <section
     id="hero"
     // --- CHANGES ARE HERE ---
-    className={`w-full min-h-screen flex flex-col justify-center items-center ${className} px-4 sm:px-8 md:px-16 lg:px-24 pt-12 pb-12`} // Use min-h-screen and add top/bottom padding
+    className={`w-full min-h-screen flex flex-col justify-center items-center ${className} px-4 sm:px-8 md:px-16 lg:px-24 pb-12`} // Use min-h-screen and add top/bottom padding
     ref={ref}
   >
     <div className="flex flex-col md:flex-row w-full items-center"> {/* Removed h-full */}
@@ -70,23 +70,25 @@ return (
           variants={buttonsVariants}
         >
           <a
-            href="https://drive.google.com/file/d/1HvKQE_u5Un4_4jFrCXbfad3-heLDzCWa/view?usp=sharing"
-            target="blank"
-            download
-            className="bg-cyan-400 hover:bg-cyan-500 text-black font-semibold py-2 px-4 rounded shadow-md transition-colors"
-          >
-            Download Resume
-          </a>
-          <a
-            href="#contact"
-            className="bg-transparent border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black font-semibold py-2 px-4 rounded shadow-md transition-colors"
-             onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('contactme')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-          >
-            Contact Me
-          </a>
+              href="https://drive.google.com/file/d/1HvKQE_u5Un4_4jFrCXbfad3-heLDzCWa/view?usp=sharing"
+              target="blank"
+              download
+              // --- UPDATED: Glass effect (Primary button) ---
+              className="bg-cyan-500/10 backdrop-blur-sm border border-cyan-400/30 text-cyan-300 font-semibold py-2 px-4 rounded-xl shadow-lg hover:bg-cyan-500/20 hover:text-cyan-200 hover:shadow-cyan-400/10 transition-all duration-300"
+            >
+              Download Resume
+            </a>
+            <a
+              href="#contact"
+              // --- UPDATED: Glass effect (Secondary button) ---
+              className="bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold py-2 px-4 rounded-xl shadow-lg hover:bg-white/20 hover:text-cyan-300 transition-all duration-300"
+               onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('contactme')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+            >
+              Contact Me
+            </a>
 
           {socials.map((social) => (
             <a
@@ -104,7 +106,7 @@ return (
 
       {/* Right: Photo */}
       <motion.div
-        className="w-full md:w-1/2 flex justify-center items-center pt-8 md:pt-0"
+        className="w-full md:w-1/2 flex justify-center items-center pt-8 md:pt-20"
         variants={photoVariants}
         initial="hidden"
         animate={controls}
