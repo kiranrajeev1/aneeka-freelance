@@ -50,7 +50,7 @@ return (
   <section
     id="hero"
     // --- CHANGES ARE HERE ---
-    className={`w-full min-h-screen flex flex-col justify-center items-center ${className} px-4 sm:px-8 md:px-16 lg:px-24 pt-24 pb-12`} // Use min-h-screen and add top/bottom padding
+    className={`w-full min-h-screen flex flex-col justify-center items-center ${className} px-4 sm:px-8 md:px-16 lg:px-24 pt-12 pb-12`} // Use min-h-screen and add top/bottom padding
     ref={ref}
   >
     <div className="flex flex-col md:flex-row w-full items-center"> {/* Removed h-full */}

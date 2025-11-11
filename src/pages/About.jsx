@@ -40,6 +40,9 @@ const About = () => {
         <p className="text-sm md:text-xl text-gray-200 leading-relaxed">
           I’m Aneeka, a B.Tech Computer Science graduate with a strong foundation in DevOps, Cloud (AWS), Orchestration, and Linux systems. I enjoy understanding how things work under the hood — from containers to infrastructure automation — and applying that knowledge to build efficient, reliable solutions.
         </p>
+        <p>
+          Lately, I’ve been freelancing, successfully collaborating with clients to deliver accurate and effective results. I enjoy working on my own terms, which allows me to focus deeply and take ownership of the projects I handle.
+        </p>
         <p className="text-sm md:text-xl text-gray-200 leading-relaxed">
           Before transitioning into tech, I worked for several years as a freelance content writer, creating clear, engaging, and SEO-optimized content across various domains — an experience that strengthened my communication skills and attention to detail.
         </p>

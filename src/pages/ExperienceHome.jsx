@@ -29,7 +29,7 @@ const useMediaQuery = (query) => {
 
 const experiences = [
   {
-  role: "AWS DevOps Engineer",
+  role: "AWS Cloud & DevOps Engineer",
   company: "Freelance",
   period: "Jan 2025 – Present",
   description:
