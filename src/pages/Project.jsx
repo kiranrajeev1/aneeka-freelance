@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect, useMemo } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Github } from "lucide-react"
 
 const projects = [
     {
@@ -177,12 +178,9 @@ const Projects = () => {
                     className="flex gap-8 overflow-x-auto snap-x snap-mandatory py-8 hide-scrollbar"
                 >
                     {loopedProjects.map((project, index) => (
-                        <motion.a
+                        <motion.div
                             key={index}
-                            href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex-shrink-0 w-[80%] sm:w-[60%] md:w-[45%] lg:w-[35%] cursor-pointer snap-center first:ml-[calc(50%-40%)] sm:first:ml-[calc(50%-30%)] md:first:ml-[calc(50%-22.5%)] lg:first:ml-[calc(50%-17.5%)] last:mr-[calc(50%-40%)] sm:last:mr-[calc(50%-30%)] md:last:mr-[calc(50%-22.5%)] lg:last:mr-[calc(50%-17.5%)]"
+                            className="flex-shrink-0 w-[80%] sm:w-[60%] md:w-[45%] lg:w-[35%] snap-center first:ml-[calc(50%-40%)] sm:first:ml-[calc(50%-30%)] md:first:ml-[calc(50%-22.5%)] lg:first:ml-[calc(50%-17.5%)] last:mr-[calc(50%-40%)] sm:last:mr-[calc(50%-30%)] md:last:mr-[calc(50%-22.5%)] lg:last:mr-[calc(50%-17.5%)]"
                             animate={{
                                 scale:
                                     currentIndex ===
@@ -224,9 +222,19 @@ const Projects = () => {
                                             ))}
                                         </div>
                                     )}
+                                    <div className="w-full h-px bg-white/30 my-4 rounded"></div>
+                                    <a
+  href={project.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-4 inline-flex items-center gap-2 text-white hover:text-cyan-200 "
+>
+  <Github size={18} />
+  View Source
+</a>
                                 </div>
                             </div>
-                        </motion.a>
+                        </motion.div>
                     ))}
                 </div>
             </div>

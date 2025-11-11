@@ -59,7 +59,7 @@ const Name = ({ name = 'Aneeka' }) => {
         initial="hidden"
         animate="visible"
       >
-        Freelancing & Open to Freelance Projects!
+        Available for Freelance Projects
       </motion.p>
     </div>
   );
